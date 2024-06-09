@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Jogos</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <em><h1>House of Gambit</h1></em>
+        </header>
+
+        <main>
+            <aside>
+                <h3>Jokenpo</h3>
+                <p>Desafie a casa no jogo de mãos mais conhecido de todos !</p>
+                <a href="/index.html"> ⇐ Voltar</a>
+            </aside>
+
+            <div class="GameConteiner1">
+
+                <p> Faça sue escolha:</p>
+
+                <div class="options">
+                <img src="/assets/pedra.png" alt="Pedra" onclick="selectOption('pedra')">
+                <img src="/assets/papel.png" alt="Papel" onclick="selectOption('papel')">
+                <img src="/assets/tesoura.png" alt="Tesoura" onclick="selectOption('tesoura')">
+            </div>
+
+            <div id="result"></div>
+
+            
+
+        </main>
+
+        <footer>
+            <p>Todos os direitos reservados <a href="https://www.instagram.com/marcos_asantosjr/">@Marcos_asantosjr</a> © 2024</p>
+        </footer>
+    </div>
+</body>
+<script src="/scripts/jokenpo.js"></script>
+</html>

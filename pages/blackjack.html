@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Jogos</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <em><h1>House of Gambit</h1></em>
+        </header>
+
+        <main>
+            <aside>
+                <h3>21</h3>
+                <p>Desafie a casa no 21!</p>
+                <p>regras: compre cartas até chegar o mais proximo possivel do valor 21, se passar você perde</p>
+                <a href="/index.html"> ⇐ Voltar</a>
+            </aside>
+
+            <div class="GameConteiner1">
+
+                <p id="message">Bem-vindo ao Jogo de 21! Clique em "Novo Jogo" para começar.</p>
+                <h5>Cartas da casa</h5>
+                <div id="dealerCards" class="cards"></div>
+                <h5>Suas cartas</h5>
+                <div id="playerCards" class="cards"></div>
+                <button id="start" onclick="startGame()">Novo Jogo</button>
+                <button id="hit" onclick="hit()">Pedir Carta</button>
+                <button id="stand" onclick="stand()">Parar</button>
+            </div>
+
+            <div id="result"></div>
+
+            
+
+        </main>
+
+        <footer>
+            <p>Todos os direitos reservados <a href="https://www.instagram.com/marcos_asantosjr/">@Marcos_asantosjr</a> © 2024</p>
+        </footer>
+    </div>
+</body>
+<script src="/scripts/21.js"></script>
+</html>

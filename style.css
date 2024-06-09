@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    background-color: #124569;
+}
+
+header {
+    background-color: #212121;
+    width: 100vw;
+    height: 15vh;
+    text-align: end;
+    align-content: center;
+}
+
+h1 {
+    margin: 0;
+    color: #fff !important;
+    margin: 0 3% 0 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+main {
+    color: #fff;
+    background-color: #57614F;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 10vw 0 10vw;
+    padding: 2% 1% 0% 2%;
+}
+
+aside {
+    width: 90%;
+    margin: 0 0 0 10%;
+    color: #fff;
+}
+
+ul {
+    width: 90%;
+    margin: 0 5%;
+    display: flex; /* Alteração para exibir os itens horizontalmente */
+    list-style: none;
+    justify-content: space-between; /* Espaço uniforme entre os itens */
+}
+
+footer {
+    background-color: #212121;
+    width: 100vw;
+    height: 5vh;
+    align-content: center;
+}
+
+footer p, footer a {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-size: small;
+    text-decoration: none;
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.GameConteiner1 {
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#guess {
+    width: 40px;
+    height: 30px;
+    border-radius: 12px;
+    border: none;
+    margin: 10px 0;
+}
+
+#start {
+    background-color: #124569;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px 0 0 0;
+}
+
+#start:hover {
+    background-color: #0c2e49;
+}
+
+#start:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(18, 69, 105, 0.5);
+}
+
+#start:active {
+    transform: scale(0.95);
+}
+
+#hit {
+    background-color: #126945;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px 0 0 0;
+}
+
+#hit:hover {
+    background-color: #0c492e;
+}
+
+#hit:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(18, 105, 69, 0.5);
+}
+
+#hit:active {
+    transform: scale(0.95);
+}
+
+#stand {
+    background-color: #691245;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px 0 0 0;
+}
+
+#stand:hover {
+    background-color: #490c2e;
+}
+
+#stand:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(105, 18, 69, 0.5);
+}
+
+#stand:active {
+    transform: scale(0.95);
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.options img {
+    width: 100px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#result {
+    color: #fff;
+    margin: 15px 0;
+}
+
+.cards img {
+    margin-right: 10px;
+    max-width: 100px;
+}
+
+/* Estilos específicos para o jogo da memória */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #212121;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    user-select: none;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped {
+    background-color: #ffffff;
+    color: #212121;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.card-text{
+    font-size: 15px !important;
+}

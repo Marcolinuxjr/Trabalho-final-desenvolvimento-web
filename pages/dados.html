@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Jogos</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <em><h1>House of Gambit</h1></em>
+        </header>
+
+        <main>
+            <aside>
+                <h3>Dados</h3>
+                <p>Teste sua sorte e tente advinhar a proxima face do dado</p>
+                <a href="/index.html"> ⇐ Voltar</a>
+            </aside>
+            <div class="GameConteiner1">
+
+                <img src="/assets/dado.jpeg" alt="Foto inicial dos dados" id="dados"> <br>
+
+                <label for="guess">De o seu palpite:</label>
+                <input type="number" id="guess" min="1" max="6" > <br>
+                <button id="start" onclick="play()">Jogar</button>
+                <p id="result"></p>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Todos os direitos reservados <a href="https://www.instagram.com/marcos_asantosjr/">@Marcos_asantosjr</a> © 2024</p>
+        </footer>
+    </div>
+</body>
+<script src="/scripts/dados.js"></script>
+</html>
