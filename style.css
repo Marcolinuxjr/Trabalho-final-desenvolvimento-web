@@ -47,9 +47,9 @@ aside {
 ul {
     width: 90%;
     margin: 0 5%;
-    display: flex; /* Alteração para exibir os itens horizontalmente */
+    display: flex; 
     list-style: none;
-    justify-content: space-between; /* Espaço uniforme entre os itens */
+    justify-content: space-between; 
 }
 
 footer {

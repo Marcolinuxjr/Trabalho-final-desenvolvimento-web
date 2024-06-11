@@ -8,7 +8,7 @@ const newGameButton = document.querySelector('button[onclick="startGame()"]');
 const hitButton = document.querySelector('button[onclick="hit()"]');
 const standButton = document.querySelector('button[onclick="stand()"]');
 const h5Elements = document.querySelectorAll('h5');
-const backOfCardImage = '/assets/carta.jpeg'; // Substitua pela URL da imagem do verso da carta
+const backOfCardImage = '/assets/carta.jpeg'; 
 
 hitButton.style.display = 'none';
 standButton.style.display = 'none';
@@ -24,10 +24,10 @@ async function startGame() {
         await Promise.all([drawCard('player'), drawCard('dealer', true)]);
         renderCards();
         messageElement.innerText = 'Escolha: Pedir Carta ou Parar';
-        newGameButton.style.display = 'none'; // Esconde o botão "Novo Jogo"
-        hitButton.style.display = 'block'; // Mostra o botão "Pedir Carta"
-        standButton.style.display = 'block'; // Mostra o botão "Parar"
-        h5Elements.forEach(h5 => h5.style.display = 'block'); // Mostra os elementos h5
+        newGameButton.style.display = 'none'; 
+        hitButton.style.display = 'block'; 
+        standButton.style.display = 'block'; 
+        h5Elements.forEach(h5 => h5.style.display = 'block'); 
     } catch (error) {
         console.error('Erro ao iniciar o jogo:', error);
     }
@@ -39,7 +39,7 @@ async function drawCard(player, hideCard = false) {
         const data = await response.json();
         const card = data.cards[0];
         if (hideCard) {
-            card.image = backOfCardImage; // Use a imagem do verso da carta
+            card.image = backOfCardImage;
         }
         if (player === 'player') {
             playerHand.push(card);
@@ -72,9 +72,9 @@ function stand() {
     if (deckId !== null) {
         revealDealerCards();
         determineWinner();
-        newGameButton.style.display = 'block'; // Mostra o botão "Novo Jogo"
-        hitButton.style.display = 'none'; // Esconde o botão "Pedir Carta"
-        standButton.style.display = 'none'; // Esconde o botão "Parar"
+        newGameButton.style.display = 'block'; 
+        hitButton.style.display = 'none'; 
+        standButton.style.display = 'none'; 
 
     } else {
         messageElement.innerText = 'Clique em "Novo Jogo" para começar.';
@@ -117,7 +117,7 @@ function renderHand(hand, cardsElement) {
 
 function revealDealerCards() {
     for (let card of dealerHand) {
-        card.image = card.images.png; // Reveal the front of the card
+        card.image = card.images.png; 
     }
     renderCards();
 }

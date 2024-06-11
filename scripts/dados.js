@@ -1,11 +1,9 @@
 function play() {
-    // Obter o número digitado pelo jogador
+
     var guess = parseInt(document.getElementById("guess").value);
 
-    // Gerar um número aleatório entre 1 e 6 (inclusive)
     var randomNumber = Math.floor(Math.random() * 6) + 1;
 
-    // Verificar se o número digitado pelo jogador é igual ao número aleatório
     if (guess >= 1 && guess <= 6) {
         if (guess === randomNumber) {
             document.getElementById("result").innerHTML = "Parabéns! Você acertou!";
